@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/normalize.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}"/>
     <title>Moje zainteresowania</title>
 
     <!--fonts-->
@@ -53,7 +54,7 @@
             <div class="columns-container columns-2-container">
                 
                 <div class="columns about-image">
-                    <img src="./images/20210912_215115.jpg" alt="kot">
+                    <img src="{{ url_for('static', filename='images/20210912_215115.jpg'}}" alt="kot">
                 </div>
 
                 <div class="columns">
